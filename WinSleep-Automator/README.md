@@ -23,8 +23,12 @@ Um script de automação em **Batch (Windows)** que utiliza a suíte **PsTools (
 **Atenção:** Por questões de segurança, as variáveis de `USUARIO` e `SENHA` foram removidas do script principal. Antes de utilizar, preencha as credenciais em seu ambiente local.
 
 
-## 🔵 Últimas Atualizações
-* **01/03/2026 01h30:** Implementação do comando `msg.exe` para permitir que o usuário (ex: médicos em plantão) visualize o aviso e tenha a opção de interagir/cancelar a suspensão caso ainda esteja utilizando a estação. Testes de interatividade validados com sucesso.
+## 🔵 Histórico de Evolução (Changelog)
 
-* ## 🔵 Últimas Atualizações
-* **01/03/2026 04h30:** Não deu certo a questão de aviso para o usuário remotamente, foi decidido junto com meu colega de trabalho Gilberto que o mais importante é que as máquinas desliguem (não hibernem) às 20h30, horario este que não há mais pessoas no hospital. A tentativa de criar opções de mecher no mouse caso haja alguém, são questões que somente com GPO será possivel, entretanto podemos adiantar o caso desligando nas máquinas CORRETAS neste horario e assim faremos, 
+* **01/03/2026 05:00 - Versão 2.0 (Foco em Desligamento Estruturado):**
+  * Após testes em ambiente real e alinhamento com a equipe (Gilberto), identificamos que a interatividade remota (janelas de aviso) possui restrições de segurança de sessão no Windows.
+  * **Mudança de Escopo:** O projeto evoluiu para um desligamento forçado (`shutdown`) às 20h30. Este horário garante 100% de ociosidade no hospital, permitindo uma economia de energia agressiva e segura sem a necessidade de intervenção do usuário.
+  * Substituição da hibernação pelo desligamento completo para garantir a limpeza de processos e cache das máquinas.
+
+* **01/03/2026 01:30 - Versão 1.5 (Fase de Testes):**
+  * Implementação experimental do `msg.exe` e tentativas de alertas interativos. Validação de que, em redes corporativas travadas, o foco deve ser a automação direta em janelas de manutenção ociosas.
