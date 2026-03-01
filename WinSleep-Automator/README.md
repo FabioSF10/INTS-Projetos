@@ -33,11 +33,15 @@ schtasks /delete /tn "WIN_SLEEP" /f
 ## 🔵 Histórico de Evolução (Changelog)
 
 * **01/03/2026 06:00 - Versão 3.0 (Arquitetura de Contingência Local):**
-  * **Pivotagem do Projeto:** O método de disparo remoto (Batch + PsTools) foi descontinuado devido a limitações de segurança de rede (bloqueios de Admin$) e alta latência.
+  * **Pivotagem do Projeto:** O método de disparo remoto (Batch + PsTools) foi descontinuado devido a limitações de segurança de rede (bloqueios de Admin$) e alta latência entre sub-redes.
   * **Implementação Final:** Adotada a criação de tarefas agendadas via conta `SYSTEM`. Esta abordagem eliminou o erro "Access Denied" e garantiu 100% de eficácia nos testes, mesmo em máquinas bloqueadas.
 
 * **01/03/2026 05:00 - Versão 2.0 (Foco em Desligamento Estruturado):**
-  * Mudança do foco de suspensão para desligamento direto às 20h30. Identificação de desafios em permissões de domínio e firewall.
+  * Mudança do foco de suspensão para desligamento direto às 20h30. Identificação de desafios em permissões de domínio e firewall que impediam a orquestração centralizada.
 
 * **01/03/2026 01:30 - Versão 1.5 (Fase de Testes):**
   * Implementação experimental do `msg.exe` e tentativas de alertas interativos. Validação de que, em redes corporativas restritas, o foco deve ser a automação direta em janelas de ociosidade.
+
+* **28/02/2026 22:00 - Versão 1.0 (Prova de Conceito - Sleep Mode):**
+  * **Ambiente de Teste:** O script inicial de suspensão (Sleep) obteve 100% de sucesso em testes entre máquinas do setor de T.I. (notebooks técnicos).
+  * **Limitação Identificada:** Ao migrar para o ambiente de produção (máquinas assistenciais), o script enfrentou restrições de permissões de energia e políticas de segurança mais rígidas que não se aplicavam aos dispositivos técnicos, exigindo a evolução para o método de desligamento (Shutdown).
