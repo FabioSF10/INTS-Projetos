@@ -1,4 +1,4 @@
-# 🌿 WinSleep Automator - Eficiência Energética em Redes Corporativas
+# 🌿 ECONOMIA_ENERGIA - Eficiência Energética em Redes Corporativas
 
 Este projeto documenta a estratégia de automação para desligamento de desktops em ambiente de rede hospitalar, visando a redução de custos operacionais e consumo de energia em períodos de inatividade.
 
