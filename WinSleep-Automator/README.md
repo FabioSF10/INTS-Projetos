@@ -1,37 +1,19 @@
-# 🌿 WinSleep Automator - Eficiência Energética em Redes Corporativas
-
-Este projeto foi desenvolvido para automatizar a suspensão (Modern Standby/Hibernação) de notebooks e desktops em ambiente de rede local (Active Directory), visando a redução de custos operacionais e consumo de energia em períodos de inatividade.
-
 ## 🚀 O Problema
-Em ambientes hospitalares ou grandes escritórios, muitas máquinas permanecem ligadas após o turno de trabalho devido ao esquecimento ou processos de atualização pendentes. O processo via GPO é possivel, mas esta em andamento ainda, porém como não tenho acesso, consigo me adiantar na criação deste projeto até que o analista de Infra estrutura crie a solução via GPO. É bom para meu aprendizado e pode ajudar mais pessoas caso precisem.
+Em ambientes hospitalares ou grandes escritórios, muitas máquinas permanecem ligadas após o expediente. Embora a solução via GPO (Group Policy Object) seja o caminho definitivo, ela pode levar tempo para ser implementada por questões burocráticas ou hierárquicas. 
 
-## 🛠️ A Solução
-Um script de automação em **Batch (Windows)** que utiliza a suíte **PsTools (PsShutdown)** e comandos nativos de mensagens (**msg.exe**) para:
-1. Validar horários de inatividade.
-2. Alertar o usuário logado com um aviso pop-up (permitindo cancelamento manual).
-3. Forçar a suspensão segura do hardware remotamente.
+Como técnico de suporte, desenvolvi este projeto para:
+1. Antecipar a entrega de valor (economia de energia) para a instituição.
+2. Validar a lógica de automação antes da implementação global.
+3. Aprofundar meus conhecimentos em scripting e administração de redes.
 
-## 📋 Pré-requisitos
-* [PsTools da Microsoft](https://learn.microsoft.com/en-us/sysinternals/downloads/pstools) (psshutdown64.exe).
-* Permissão de Administrador Local/Rede.
-* Arquivo `pcs.txt` na raiz da pasta com o nome das máquinas.
+## 📂 Como Utilizar
+Para implementar esta solução em seu ambiente:
+1. Copie a pasta `Scripts` para o seu **Disco Local C:\**.
+2. No arquivo `pcs.txt`, liste os hostnames dos computadores alvos.
+3. No script `Automacao_Energia.bat`, insira as credenciais de rede (`USUARIO` e `SENHA`) e defina o horário de execução desejado.
+4. Execute o arquivo `.bat` como **Administrador**.
 
-## 📂 Estrutura do Repositório
-* `Automacao_Energia.bat`: Script principal de controle de horários e disparos.
-* `pcs.txt`: Lista de computadores alvos (Hostname).
-* `psshutdown64.exe`: Executável da Sysinternals utilizado.
-* O arquivo encontra-se nesta pasta chamado Scripts, terá sempre atualizações, o projeto esta em andamento.
+> **Nota:** O projeto está em constante evolução. Consulte a seção de atualizações para as novidades.
 
-## ⚠️ Segurança
-**Atenção:** Por questões de segurança, as variáveis de `USUARIO` e `SENHA` foram removidas do script principal. Antes de utilizar, preencha as credenciais em seu ambiente local.
-
-
-
-## 🔵 Ultimas Atualizações
-01/03/2026 - Será realizado agora teste de mecher no mouse para cancelar entrar em modo sleep, assim, caso tenha um medico usando o computador não entra em modo de energia, pois o codigo já esta funcionando.
-
-
-
-## 👤 Autor
-**Fabio Stefano de Figueiredo**
-*Suporte Técnico de T.I. focado em Cloud Computing (AWS)*
+## 🔵 Últimas Atualizações
+* **01/03/2026:** Implementação do comando `msg.exe` para permitir que o usuário (ex: médicos em plantão) visualize o aviso e tenha a opção de interagir/cancelar a suspensão caso ainda esteja utilizando a estação. Testes de interatividade validados com sucesso.
