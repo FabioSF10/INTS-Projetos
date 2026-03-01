@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido para automatizar a suspensão (Modern Standby/Hibernação) de notebooks e desktops em ambiente de rede local (Active Directory), visando a redução de custos operacionais e consumo de energia em períodos de inatividade.
 
 ## 🚀 O Problema
-Em ambientes hospitalares ou grandes escritórios, muitas máquinas permanecem ligadas após o turno de trabalho devido ao esquecimento ou processos de atualização pendentes. O acesso via GPO (Group Policy Object) nem sempre está disponível de imediato para o nível de suporte técnico operacional.
+Em ambientes hospitalares ou grandes escritórios, muitas máquinas permanecem ligadas após o turno de trabalho devido ao esquecimento ou processos de atualização pendentes. O processo via GPO é possivel, mas esta em andamento ainda, porém como não tenho acesso, consigo me adiantar na criação deste projeto até que o analista de Infra estrutura crie a solução via GPO. É bom para meu aprendizado e pode ajudar mais pessoas caso precisem.
 
 ## 🛠️ A Solução
 Um script de automação em **Batch (Windows)** que utiliza a suíte **PsTools (PsShutdown)** e comandos nativos de mensagens (**msg.exe**) para:
@@ -20,9 +20,17 @@ Um script de automação em **Batch (Windows)** que utiliza a suíte **PsTools (
 * `Automacao_Energia.bat`: Script principal de controle de horários e disparos.
 * `pcs.txt`: Lista de computadores alvos (Hostname).
 * `psshutdown64.exe`: Executável da Sysinternals utilizado.
+* O arquivo encontra-se nesta pasta chamado Scripts, terá sempre atualizações, o projeto esta em andamento.
 
 ## ⚠️ Segurança
-**Atenção:** Por questões de segurança, as variáveis de `USUARIO` e `SENHA` foram removidas do script principal. Antes de utilizar, preencha as credenciais em seu ambiente local. **Nunca suba suas senhas reais para o GitHub.**
+**Atenção:** Por questões de segurança, as variáveis de `USUARIO` e `SENHA` foram removidas do script principal. Antes de utilizar, preencha as credenciais em seu ambiente local.
+
+
+
+## 🔵 Ultimas Atualizações
+01/03/2026 - Será realizado agora teste de mecher no mouse para cancelar entrar em modo sleep, assim, caso tenha um medico usando o computador não entra em modo de energia, pois o codigo já esta funcionando.
+
+
 
 ## 👤 Autor
 **Fabio Stefano de Figueiredo**
