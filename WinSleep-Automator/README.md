@@ -26,9 +26,7 @@ Um script de automação em **Batch (Windows)** que utiliza a suíte **PsTools (
 ## 🔵 Histórico de Evolução (Changelog)
 
 * **01/03/2026 05:00 - Versão 2.0 (Foco em Desligamento Estruturado):**
-  * Após testes em ambiente real e alinhamento com a equipe (Gilberto), identificamos que a interatividade remota (janelas de aviso) possui restrições de segurança de sessão no Windows.
-  * **Mudança de Escopo:** O projeto evoluiu para um desligamento forçado (`shutdown`) às 20h30. Este horário garante 100% de ociosidade no hospital, permitindo uma economia de energia agressiva e segura sem a necessidade de intervenção do usuário.
-  * Substituição da hibernação pelo desligamento completo para garantir a limpeza de processos e cache das máquinas.
+  * Identificamos restrições de segurança para alertas remotos. Em conjunto com a equipe (Gilberto), mudamos o foco para desligamento direto às 20h30, garantindo eficácia total no período de ociosidade do hospital. Esta versão antecipa a economia de energia enquanto a GPO definitiva é processada, focando em máquinas previamente mapeadas.
 
 * **01/03/2026 01:30 - Versão 1.5 (Fase de Testes):**
   * Implementação experimental do `msg.exe` e tentativas de alertas interativos. Validação de que, em redes corporativas travadas, o foco deve ser a automação direta em janelas de manutenção ociosas.
