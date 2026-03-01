@@ -18,11 +18,11 @@ Para aplicar o desligamento em massa sem depender de GPO, utiliza-se os seguinte
 
 **1. Criar tarefa de desligamento (Diário às 20:30):**
 ```cmd
-schtasks /create /tn "WIN_SLEEP" /tr "shutdown /s /f /t 0" /sc daily /st 20:30 /f /rl highest /ru "SYSTEM"
+schtasks /create /tn "ECONOMIA_ENERGIA" /tr "shutdown /s /f /t 0" /sc daily /st 20:30 /f /rl highest /ru "SYSTEM"
 ```
 **2. Remover tarefa caso necessário**
 ```cmd
-schtasks /delete /tn "WIN_SLEEP" /f
+schtasks /delete /tn "ECONOMIA_ENERGIA" /f
 ```
 
 ## 📂 Estrutura do Repositório
