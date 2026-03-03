@@ -1,21 +1,26 @@
 # 🕒 Sincronizador de Horário "Flash" - Infraestrutura INTS
 
-Este projeto documenta o método de **Sincronização Manual Acelerada** via interface Web e DWService, desenvolvido para garantir 100% de eficácia em cenários onde protocolos automáticos (NTP) são bloqueados pela rede.
+Este projeto documenta o método de **Sincronização Manual Acelerada** via interface Web e DWService, desenvolvido para garantir 100% de eficácia em cenários onde protocolos automáticos (NTP) são bloqueados pela rede hospitalar.
+
+## 🚀 Acesso à Ferramenta
+Para agilizar o processo de cópia do comando, utilize o link abaixo:
+
+🔗 **[Abrir Sincronizador de Horário (Clique Aqui)](SINCRONIZACAO_HORARIO/horario.html)**
+*(Nota: Se o GitHub Pages estiver ativo, utilize o link da URL pública para maior agilidade)*
 
 ## 🎯 Objetivo
-Corrigir o atraso de relógios em desktops de forma instantânea, garantindo que o prontuário eletrônico (MV) e os logs do hospital operem com precisão de segundos, eliminando erros de serviço do Windows (1058 e 1072).
+Corrigir o atraso de relógios em desktops de forma instantânea, garantindo que o prontuário eletrônico (MV) opere com precisão de segundos, eliminando erros persistentes de serviço do Windows como o 1058 e 1072.
 
-## 🚀 Implementação Técnica (Workflow)
-A solução utiliza uma **Single Page Application (SPA)** desenvolvida em HTML/JS para gerar comandos de sistema em tempo real.
+## 🛠️ Fluxo de Trabalho (Workflow)
+A solução utiliza uma **SPA (Single Page Application)** para gerar comandos de sistema em tempo real:
 
-**Fluxo de Execução:**
-1. **Geração:** O técnico mantém o `horario.html` aberto (via GitHub Pages ou local).
-2. **Cópia:** Um clique no botão gera e copia o comando `time HH:MM:SS` com o tempo exato do notebook.
+1. **Geração:** O técnico mantém o `horario.html` aberto;
+2. **Cópia:** Um clique no botão gera e copia o comando `time HH:MM:SS` com o tempo exato;
 3. **Aplicação:** O comando é colado diretamente no **Shell do DWService** da máquina destino.
 
-## 🛠️ Comandos de Suporte
+## 💻 Comandos Auxiliares
 
-### Ajuste Manual (Via Interface Web)
-Acesse a ferramenta e utilize o botão de cópia para o comando:
+### Ajuste Manual Direto
+Caso não possa acessar a ferramenta web, digite no terminal:
 ```cmd
 time HH:MM:SS
