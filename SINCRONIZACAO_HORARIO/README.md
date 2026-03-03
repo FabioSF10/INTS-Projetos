@@ -5,7 +5,7 @@ Este projeto documenta o método de **Sincronização Manual Acelerada** via int
 ## 🚀 Acesso à Ferramenta
 Para agilizar o processo de cópia do comando, utilize o link abaixo:
 
-🔗 **[Abrir Sincronizador de Horário (Clique Aqui)](SINCRONIZACAO_HORARIO/horario.html)**
+🔗 **[ABRIR FERRAMENTA DE SINCRONIZAÇÃO](https://htmlpreview.github.io/?https://github.com/FabioSF10/INTS-Projetos/blob/main/SINCRONIZACAO_HORARIO/horario.html)**
 
 
 ## 🎯 Objetivo
