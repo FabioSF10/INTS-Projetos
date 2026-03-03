@@ -30,9 +30,9 @@ time 05:30
 
 ## 🔵 Histórico de Evolução (Changelog)
 
-* **03/03/2026 - Versão 2.0 (Ajuste Remoto em Massa):**
+* **03/03/2026 05h- Versão 2.0 (Ajuste Remoto em Massa):**
   * Implementação de script PowerShell por um usuário administrador.  * 
 
-* **01/03/2026 - Versão 1.0 (Tentativa de Sincronização NTP)**
+* **03/03/2026 3h30 - Versão 1.0 (Tentativa de Sincronização NTP)**
   * Testes com servidores a.ntp.br e domhier. Método descontinuado em alguns setores devido a bloqueios de porta e instabilidade de rede.  * 
 
