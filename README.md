@@ -12,5 +12,9 @@ Este repositório centraliza as soluções, scripts e ferramentas desenvolvidas 
 * **Status:** ✅ Validado / Em Produção.
 * **Diferencial:** Implementação de aviso prévio ao usuário (msg.exe) antes da suspensão do hardware.
 
+
+### 🌿 [SINCRONIZAÇÃO DE HORARIO](./SINCRONIZACAO_HORARIO)
+**Objetivo:** Redução do consumo de energia elétrica em notebooks e desktops.
+
 ---
 > *Este repositório é um portfólio de melhoria contínua para a infraestrutura de saúde.*
