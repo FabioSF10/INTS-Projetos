@@ -6,7 +6,7 @@ Este repositório centraliza as soluções, scripts e ferramentas desenvolvidas 
 
 ## 🚀 Projetos Ativos
 
-### 🌿 [WinSleep-Automator](./WinSleep-Automator)
+### 🌿 [ECONOMIA DE ENERGIA](./ECONOMIA_ENERGIA)
 **Objetivo:** Redução do consumo de energia elétrica em notebooks e desktops.
 * **Tecnologias:** Batch Script, PsTools (Sysinternals), Protocolo RPC.
 * **Status:** ✅ Validado / Em Produção.
