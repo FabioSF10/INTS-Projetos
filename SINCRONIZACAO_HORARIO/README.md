@@ -1,38 +1,21 @@
-# 🕒 Sincronização de Horário - Automação INTS
-Este documento descreve a estratégia de sincronização de relógios nos desktops do hospital, garantindo a precisão necessária para os registros no sistema MV.
+# 🕒 Sincronizador de Horário "Flash" - Infraestrutura INTS
 
-## 📌 O Problema
-Corrigir atrasos nos relógios das estações de trabalho de forma ágil, contornando bloqueios de rede ou falhas de bateria (CMOS).
+Este projeto documenta o método de **Sincronização Manual Acelerada** via interface Web e DWService, desenvolvido para garantir 100% de eficácia em cenários onde protocolos automáticos (NTP) são bloqueados pela rede.
 
-## ⚙️ Implementação via Terminal (CMD/PowerShell)
+## 🎯 Objetivo
+Corrigir o atraso de relógios em desktops de forma instantânea, garantindo que o prontuário eletrônico (MV) e os logs do hospital operem com precisão de segundos, eliminando erros de serviço do Windows (1058 e 1072).
 
-A solução utiliza WMI (Windows Management Instrumentation) para disparar o ajuste de hora remotamente em massa, garantindo que todos os PCs operem no mesmo minuto simultaneamente.
+## 🚀 Implementação Técnica (Workflow)
+A solução utiliza uma **Single Page Application (SPA)** desenvolvida em HTML/JS para gerar comandos de sistema em tempo real.
 
-## Comandos para Configuração
-1. Ajuste em Massa (Executar no PowerShell do Notebook Técnico)
-Copie o código abaixo, ajuste os nomes dos PCs e o horário, e execute:
+**Fluxo de Execução:**
+1. **Geração:** O técnico mantém o `horario.html` aberto (via GitHub Pages ou local).
+2. **Cópia:** Um clique no botão gera e copia o comando `time HH:MM:SS` com o tempo exato do notebook.
+3. **Aplicação:** O comando é colado diretamente no **Shell do DWService** da máquina destino.
 
+## 🛠️ Comandos de Suporte
+
+### Ajuste Manual (Via Interface Web)
+Acesse a ferramenta e utilize o botão de cópia para o comando:
 ```cmd
-$PCs = @("SMSHDSATPC03", "SMSHDSATPC04", "SMSHDSATPC05")
-$Horario = "05:30"
-
-foreach ($PC in $PCs) {
-    Write-Host "Ajustando horário no $PC..." -ForegroundColor Cyan
-    Invoke-WmiMethod -ComputerName $PC -Class Win32_Process -Name Create -ArgumentList "cmd.exe /c time $Horario"
-}
-```
-
-2. Correção Individual (Via Shell DWService)
-Caso precise forçar manualmente em uma única máquina:
-```cmd
-time 05:30
-```
-
-## 🔵 Histórico de Evolução (Changelog)
-
-* **03/03/2026 05h- Versão 2.0 (Ajuste Remoto em Massa):**
-  * Implementação de script PowerShell por um usuário administrador.  * 
-
-* **03/03/2026 3h30 - Versão 1.0 (Tentativa de Sincronização NTP)**
-  * Testes com servidores a.ntp.br e domhier. Método descontinuado em alguns setores devido a bloqueios de porta e instabilidade de rede.  * 
-
+time HH:MM:SS
