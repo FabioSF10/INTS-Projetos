@@ -1,20 +1,38 @@
-# 🕒 Projeto: Sincronização de Horário (NTP) via Shell
-
-Este repositório documenta a padronização dos relógios das estações de trabalho do hospital. Horários dessincronizados causam erros críticos em logs de auditoria, sistemas de prontuário (MV) e autenticação de rede.
+# 🕒 Sincronização de Horário - Automação INTS
+Este documento descreve a estratégia de sincronização de relógios nos desktops do hospital, garantindo a precisão necessária para os registros no sistema MV.
 
 ## 📌 O Problema
-Identificamos divergências de horário entre as recepções, o que impacta diretamente na precisão dos registros de atendimento. Como alternativa à GPO, utilizei o **DWService (Shell)** para uma intervenção imediata e centralizada.
+Corrigir atrasos nos relógios das estações de trabalho de forma ágil, contornando bloqueios de rede ou falhas de bateria (CMOS).
 
 ## ⚙️ Implementação via Terminal (CMD/PowerShell)
 
-Para forçar a sincronização de uma máquina com os servidores oficiais do **NTP.br**, utilizei a seguinte sequência de comandos:
+A solução utiliza WMI (Windows Management Instrumentation) para disparar o ajuste de hora remotamente em massa, garantindo que todos os PCs operem no mesmo minuto simultaneamente.
+
+## Comandos para Configuração
+1. Ajuste em Massa (Executar no PowerShell do Notebook Técnico)
+Copie o código abaixo, ajuste os nomes dos PCs e o horário, e execute:
 
 ```cmd
-:: Define o servidor de tempo brasileiro como referência
-w32tm /config /manualpeerlist:"a.ntp.br,0x1 b.ntp.br,0x1" /syncfromflags:manual /reliable:YES /update
+$PCs = @("SMSHDSATPC03", "SMSHDSATPC04", "SMSHDSATPC05")
+$Horario = "05:30"
 
-:: Reinicia o serviço para aplicar as configurações
-net stop w32time && net start w32time
+foreach ($PC in $PCs) {
+    Write-Host "Ajustando horário no $PC..." -ForegroundColor Cyan
+    Invoke-WmiMethod -ComputerName $PC -Class Win32_Process -Name Create -ArgumentList "cmd.exe /c time $Horario"
+}
+```
 
-:: Força a sincronização imediata do relógio
-w32tm /resync
+2. Correção Individual (Via Shell DWService)
+Caso precise forçar manualmente em uma única máquina:
+```cmd
+time 05:30
+```
+
+## 🔵 Histórico de Evolução (Changelog)
+
+* **03/03/2026 - Versão 2.0 (Ajuste Remoto em Massa):**
+  * Implementação de script PowerShell por um usuário administrador.  * 
+
+* **01/03/2026 - Versão 1.0 (Tentativa de Sincronização NTP)**
+  * Testes com servidores a.ntp.br e domhier. Método descontinuado em alguns setores devido a bloqueios de porta e instabilidade de rede.  * 
+
