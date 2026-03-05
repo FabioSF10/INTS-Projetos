@@ -10,11 +10,24 @@ Este projeto foi desenvolvido para otimizar o consumo de energia no hospital INT
 A nova versão abandonou a linha de comando manual e agora conta com uma interface amigável (`.hta`) que automatiza todo o processo de configuração, garantindo que o sistema seja instalado corretamente no diretório padrão `C:\`.
 
 ### 📦 Como Instalar:
-1. Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Desligamento_Inteligente_INTS.zip)**.
-2. Extraia o conteúdo em qualquer pasta (ex: Downloads ou Desktop).
-3. Execute o atalho **"INSTALAR - ECONOMIA DE ENERGIA INTS"** (ícone de relógio).
-4. O instalador moverá os arquivos automaticamente para o `C:\` e abrirá a interface de configuração.
-5. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
+
+1.  **Download:** Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/main/ECONOMIA_ENERGIA/Desligamento_Inteligente_INTS.zip)**.
+2.  **Extração:** **IMPORTANTE:** Extraia o conteúdo do ZIP para uma pasta (Downloads ou Desktop). Não execute os arquivos diretamente de dentro do ZIP.
+3.  **Execução:** Clique duas vezes no atalho **"✅ CLIQUE AQUI PARA INSTALAR"** (Ícone Verde).
+4.  **Permissão de Administrador (UAC):** Uma janela do Windows aparecerá perguntando se deseja permitir que o "Host de Aplicativo HTML" faça alterações. Clique em **SIM**.
+    > *Essa permissão é obrigatória para que o instalador consiga criar o agendamento de desligamento no sistema.*
+5.  **Configuração:** O sistema moverá os arquivos para o `C:\` e abrirá a interface visual. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
+
+---
+
+### 🛡️ Confirmação de Instalação
+Após o passo 4, uma mensagem confirmará que os arquivos foram movidos com sucesso. A pasta original de download ficará apenas com um arquivo de texto informativo e poderá ser apagada para manter a organização da máquina.
+
+---
+
+### 💡 Dicas de Suporte
+* **Diretório Padrão:** O sistema opera sempre a partir de `C:\Desligamento_Inteligente`.
+* **Desinstalação:** Para remover o agendamento e os arquivos, abra a interface e clique no botão de desinstalação.
 
 ---
 
