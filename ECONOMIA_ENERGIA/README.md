@@ -10,7 +10,7 @@ Este projeto foi desenvolvido para otimizar o consumo de energia no hospital INT
 A nova versão abandonou a linha de comando manual e agora conta com uma interface amigável (`.hta`) que automatiza todo o processo de configuração, garantindo que o sistema seja instalado corretamente no diretório padrão `C:\`.
 
 ### 📦 Como Instalar:
-1. Baixe o arquivo **Desligamento_Inteligente_INTS.zip** disponível neste repositório.
+1. Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioStefano/Desligamento_Inteligente/raw/main/Desligamento_Inteligente_INTS.zip)**.
 2. Extraia o conteúdo em qualquer pasta (ex: Downloads ou Desktop).
 3. Execute o atalho **"INSTALAR - ECONOMIA DE ENERGIA INTS"** (ícone de relógio).
 4. O instalador moverá os arquivos automaticamente para o `C:\` e abrirá a interface de configuração.
