@@ -21,6 +21,8 @@ A nova versão abandonou a linha de comando manual e agora conta com uma interfa
 <img width="701" height="380" alt="image" src="https://github.com/user-attachments/assets/14e2f256-5660-4a8d-a048-3349a6bd10a6" />
 
 5.  **Configuração:** O sistema moverá os arquivos para o `C:\` e abrirá a interface visual. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
+   <img width="215" height="267" alt="image" src="https://github.com/user-attachments/assets/7c936c5f-1229-4f59-a07a-2952f24cdba8" />
+
 
 ---
 
