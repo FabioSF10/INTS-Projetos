@@ -16,6 +16,8 @@ A nova versão abandonou a linha de comando manual e agora conta com uma interfa
 3.  **Execução:** Clique duas vezes no atalho **"✅ CLIQUE AQUI PARA INSTALAR"** (Ícone Verde).
 4.  **Permissão de Administrador (UAC):** Uma janela do Windows aparecerá perguntando se deseja permitir que o "Host de Aplicativo HTML" faça alterações. Clique em **SIM**.
     > *Essa permissão é obrigatória para que o instalador consiga criar o agendamento de desligamento no sistema.*
+<img width="701" height="380" alt="image" src="https://github.com/user-attachments/assets/14e2f256-5660-4a8d-a048-3349a6bd10a6" />
+
 5.  **Configuração:** O sistema moverá os arquivos para o `C:\` e abrirá a interface visual. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
 
 ---
