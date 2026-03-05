@@ -2,57 +2,49 @@
 
 ![Versão](https://img.shields.io/badge/vers%C3%A3o-4.0.0-green)
 ![Autor](https://img.shields.io/badge/autor-Fabio%20Stefano-blue)
+![Licença](https://img.shields.io/badge/license-MIT-important)
 
-Este projeto foi desenvolvido para otimizar o consumo de energia no hospital INTS...
+Este projeto foi desenvolvido para otimizar o consumo de energia no hospital INTS através do desligamento programado de desktops, visando a redução de custos e preservação de hardware.
 
+## 🌟 Novidade: Versão 4.0 (Instalador Visual)
+A nova versão abandonou a linha de comando manual e agora conta com uma interface amigável (`.hta`) que automatiza todo o processo de configuração, garantindo que o sistema seja instalado corretamente no diretório padrão `C:\`.
 
-Este documento descreve a estratégia de automação para o desligamento programado de desktops, visando a redução do consumo de energia e a preservação do hardware em períodos de inatividade operacional no hospital INTS.
+### 📦 Como Instalar:
+1. Baixe o arquivo **Desligamento_Inteligente_INTS.zip** disponível neste repositório.
+2. Extraia o conteúdo em qualquer pasta (ex: Downloads ou Desktop).
+3. Execute o atalho **"INSTALAR - ECONOMIA DE ENERGIA INTS"** (ícone de relógio).
+4. O instalador moverá os arquivos automaticamente para o `C:\` e abrirá a interface de configuração.
+5. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
 
-## Objetivo
-Otimizar o consumo energético através da automação do desligamento das máquinas que não operam em regime 24h. Esta medida atua como uma solução ágil e segura enquanto as políticas definitivas de GPO estão em fase de homologação pela infraestrutura.
+---
 
-## Implementação Técnica
-A solução utiliza o **Agendador de Tarefas do Windows** para garantir a execução local do comando com máxima confiabilidade.
+## 🛠️ Implementação Técnica
+A solução utiliza uma tríade de tecnologias nativas do Windows para máxima compatibilidade sem softwares de terceiros:
+* **Interface (HTA/JS):** Front-end interativo para configuração do horário.
+* **Monitoramento (BAT):** Script em loop de 20s que verifica o horário do sistema e do arquivo `config.txt`.
+* **Execução Silenciosa (VBS):** Garante que o monitoramento rode em segundo plano, sem janelas pretas atrapalhando o usuário.
 
-**Diferenciais desta abordagem:**
-* **Autonomia:** O comando é executado localmente pelo sistema operacional, com configuração remota simplificada via **DWService**.
-* **Consistência:** A tarefa é disparada mesmo se o computador estiver na tela de bloqueio ou sem usuário logado.
-* **Segurança:** Utiliza comandos nativos do Windows (`schtasks`), sem necessidade de softwares de terceiros.
-
-## Comandos para Configuração
-
-Para aplicar o agendamento em máquinas mapeadas:
-1. Acesse o **DWService** (previamente configurado nas máquinas do hospital);
-2. Realize o login e acesse a máquina de interesse;
-3. Utilize o recurso **Shell** para inserir os comandos abaixo:
-
-<img width="353" height="284" alt="image" src="https://github.com/user-attachments/assets/b7573edc-d441-47f9-a505-5b39f7e75fff" />
-
-**1. Criar agendamento (Diário às 20:30):**
-Ao entrar na linha de comando da maquina copiar o codigo abaixo e colar usando o mouse e da Enter:
-```cmd
-schtasks /create /tn "ECONOMIA_ENERGIA" /tr "shutdown /s /f /t 0" /sc daily /st 20:30 /f /rl highest /ru "SYSTEM"
-
-```
-
-**2. Remover tarefa caso necessário**
-```cmd
-schtasks /delete /tn "ECONOMIA_ENERGIA" /f
-```
-
+---
 
 ## 🔵 Histórico de Evolução (Changelog)
 
+* **05/03/2026 05:00 - Versão 4.0 (Instalador Inteligente & Interface Visual):**
+  * **Nova Estratégia:** Substituição dos comandos manuais via Shell/DWService por um pacote instalador completo.
+  * **Automatização:** Criado script `instalar_automatico.bat` que padroniza a instalação no `C:\` e limpa os arquivos temporários da pasta de origem.
+  * **Interface:** Implementada interface HTA com auto-elevação de privilégios e opção de desinstalação completa.
+  * **Invisibilidade:** O processo de monitoramento agora é 100% oculto para o usuário final.
+
 * **01/03/2026 06:00 - Versão 3.0 (Mudança de estratégia):**
-  * O método de disparo remoto .bat foi descontinuado devido a limitações de segurança de rede (bloqueios de Admin$) e alta latência entre sub-redes.
-  * **Implementação Final:** Adotada a criação de tarefas agendadas via DWService. Esta abordagem eliminou o erros  e garantiu 100% de eficácia nos testes, mesmo em máquinas bloqueadas.
+  * O método de disparo remoto via rede foi descontinuado devido a limitações de segurança.
+  * Adotada a criação de tarefas agendadas via Shell no DWService.
 
 * **01/03/2026 05:00 - Versão 2.0 (Foco em Desligamento):**
-  * Mudança do foco de "modo dormir" para "desligamento direto" às 20h30. Identificação de desafios em permissões de domínio e firewall que não permitia modo dormir. Ao tentar executar .Bat em modo "Desligar" nos computadores da recepção, tivemos problemas de lentidão na execução. Funcionou, mas levava muito tempo para desligar máquina por máquina, o que não é viavel.
+  * Mudança do foco de "modo dormir" para "desligamento direto" devido a limitações de GPO e Hardware.
 
-* **01/03/2026 01:30 - Versão 1.5 (Teste de botão de cancelamento):**
-  * Foi realizado a tentativa de implementar uma mensagem de cancelar modo dormir. O botão de cancelar não funcionou, sendo assim, a opção é de simplesmente desligar ou entrar em modo sleep sem possibilidade de cancelamento via botão.
+* **28/02/2026 22:00 - Versão 1.0 (Protótipo em .bat):**
+  * Criação do primeiro script de suspensão testado em ambiente controlado (T.I.).
 
-* **28/02/2026 22:00 - Versão 1.0 (Criado arquivo .bat para modo Sleep):**
-  * **Ambiente de Teste:** Foi criado um arquivo .bat de suspensão (Sleep) obteve 100% de sucesso em testes entre máquinas do setor de T.I. (notebooks técnicos).
+---
 
+## ⚖️ Licença
+Este projeto está sob a licença MIT - Veja o arquivo [LICENSE](LICENSE) para detalhes.
