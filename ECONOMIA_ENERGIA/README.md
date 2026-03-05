@@ -11,7 +11,7 @@ A nova versão abandonou a linha de comando manual e agora conta com uma interfa
 
 ### 📦 Como Instalar:
 
-1.  **Download:** Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/main/ECONOMIA_ENERGIA/Desligamento_Inteligente_INTS.zip)**.
+1.  **Download:** Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Economia_de_energia_descompactar_tudo.zip)**.
 2.  **Extração:** **IMPORTANTE:** Extraia o conteúdo do ZIP para uma pasta (Downloads ou Desktop). Não execute os arquivos diretamente de dentro do ZIP.
    <img width="440" height="362" alt="image" src="https://github.com/user-attachments/assets/061a1e29-5687-45fd-b019-b69113476356" />
 
