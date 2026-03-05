@@ -1,12 +1,10 @@
 # 🚀 Sistema de Economia de Energia - INTS
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-green)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-4.0.0-green)
 ![Autor](https://img.shields.io/badge/autor-Fabio%20Stefano-blue)
 
 Este projeto foi desenvolvido para otimizar o consumo de energia no hospital INTS...
 
-
-# ⚡ Procedimento de Eficiência Energética - Desligamento Automatizado INTS Santo Amaro
 
 Este documento descreve a estratégia de automação para o desligamento programado de desktops, visando a redução do consumo de energia e a preservação do hardware em períodos de inatividade operacional no hospital INTS.
 
