@@ -23,8 +23,9 @@ A nova versão abandonou a linha de comando manual e agora conta com uma interfa
     > *Essa permissão é obrigatória para que o instalador consiga criar o agendamento de desligamento no sistema.*
 <img width="701" height="380" alt="image" src="https://github.com/user-attachments/assets/14e2f256-5660-4a8d-a048-3349a6bd10a6" />
 
-5.  **Configuração:** O sistema moverá os arquivos para o `C:\` e abrirá a interface visual. Defina o horário desejado e clique em **INSTALAR / ATUALIZAR**.
-   <img width="215" height="267" alt="image" src="https://github.com/user-attachments/assets/7c936c5f-1229-4f59-a07a-2952f24cdba8" />
+5.  **Configuração:** O sistema moverá os arquivos para o `C:\` e abrirá a interface visual. Defina o horário de incio e de intervalo desejado e clique em **INSTALAR / ATUALIZAR**.
+   <img width="215" height="294" alt="image" src="https://github.com/user-attachments/assets/bf943bb0-e423-456c-9d4b-bbbfbfa1fd3e" />
+
 
 
 ---
