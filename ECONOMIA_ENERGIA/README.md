@@ -50,6 +50,12 @@ A solução utiliza uma tríade de tecnologias nativas do Windows para máxima c
 
 ## 🔵 Histórico de Evolução (Changelog)
 
+* **06/03/2026 21:00 - Versão 4.1 (Parâmetros Dinâmicos & Segurança de Desinstalação):**
+  * **Configuração Flexível:** Adicionado campo de "Intervalo de Reaviso" no Setup, permitindo que o técnico defina entre 1 e 60 minutos o tempo de espera após o clique em "Ainda estou utilizando".
+  * **Lógica de Persistência:** O sistema agora utiliza o `config.txt` como banco de dados local para armazenar tanto o horário de início quanto o tempo de intervalo, lidos dinamicamente pelo motor `.bat`.
+  * **Interface Inteligente:** O alerta de desligamento agora exibe via código dinâmico o tempo exato de reaviso configurado pelo técnico, garantindo clareza para o usuário final.
+  * **Blindagem na Desinstalação:** O botão de desinstalar agora encerra forçadamente a interface de aviso (`mshta.exe`) caso ela esteja aberta, eliminando o risco de um desligamento acidental após a remoção do sistema.    
+
 * **05/03/2026 05:00 - Versão 4.0 (Instalador Inteligente & Interface Visual):**
   * **Nova Estratégia:** Substituição dos comandos manuais via Shell/DWService por um pacote instalador completo.
   * **Automatização:** Criado script `instalar_automatico.bat` que padroniza a instalação no `C:\` e limpa os arquivos temporários da pasta de origem.
