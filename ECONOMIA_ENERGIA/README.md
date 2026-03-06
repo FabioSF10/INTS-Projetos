@@ -1,6 +1,6 @@
 # 🚀 Sistema de Economia de Energia - INTS
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-4.0.0-green)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-4.1.0-green)
 ![Autor](https://img.shields.io/badge/autor-Fabio%20Stefano-blue)
 ![Licença](https://img.shields.io/badge/license-MIT-important)
 
@@ -11,7 +11,8 @@ A nova versão abandonou a linha de comando manual e agora conta com uma interfa
 
 ### 📦 Como Instalar:
 
-1.  **Download:** Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Economia_de_energia_descompactar_tudo.zip)**.
+1.  **Download:** Baixe o arquivo **[Desligamento_Inteligente_INTS.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Economia_de_energia_descompactar_e_executar_4.1.zip
+)**.
 2.  **Extração:** **IMPORTANTE:** Extraia o conteúdo do ZIP para uma pasta (Downloads ou Desktop). Não execute os arquivos diretamente de dentro do ZIP.
    <img width="440" height="362" alt="image" src="https://github.com/user-attachments/assets/061a1e29-5687-45fd-b019-b69113476356" />
 
