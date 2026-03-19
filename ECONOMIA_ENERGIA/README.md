@@ -41,7 +41,7 @@ Abra a pasta extraída e execute o arquivo:
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 1.  Defina o **Horário de Desligamento**.
 2.  Ajuste o **Tempo de Aviso** e **Adiamento**.
-3.  Clique em **SALVAR/INSTALAR**.
+3.  Clique em **INSTALAR/ATUALIZAR**.
 <img width="215" height="333" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
 
 ---
