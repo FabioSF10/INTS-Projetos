@@ -17,13 +17,13 @@ O **INTS Energy Control** é uma solução profissional para otimizar o consumo 
 ## 📦 Como Instalar (Passo a Passo)
 
 ### 1. Download
-Baixe o pacote oficial clicando no link abaixo:
+Baixe o pacote oficial clicando no link:
 👉 **[BAIXAR INTS_ENERGY_5.0.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/DESCOMPACTE_E_EXECUTE_INTS_ENERGY_5.0.zip)**
 
 ### 2. Extração (Obrigatório)
 **IMPORTANTE:** Você deve extrair o conteúdo do ZIP para uma pasta antes de rodar. Não execute de dentro do arquivo compactado.
 > *Clique com o botão direito no arquivo > Extrair Tudo.*
-> <img width="440" alt="image" src="https://github.com/user-attachments/assets/cc43fab4-f6d6-4b89-9d9c-dbb61f1a2bf9" />
+> <img width="840" alt="image" src="https://github.com/user-attachments/assets/cc43fab4-f6d6-4b89-9d9c-dbb61f1a2bf9" />
 
 
 ### 3. Instalação Automática
