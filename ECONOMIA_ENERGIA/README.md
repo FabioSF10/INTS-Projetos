@@ -83,14 +83,18 @@ A solução utiliza uma estrutura híbrida para máxima eficiência:
     * **Blindagem na Desinstalação:** O botão de desinstalar agora encerra forçadamente o `mshta.exe`, eliminando riscos de desligamento residual.
 
 * **05/03/2026 05:00 - Versão 4.0 (Instalador Inteligente & Interface Visual):**
-    * **Nova Estratégia:** Substituição dos comandos manuais por um pacote instalador completo.
+    * **Nova Estratégia:** Substituição dos comandos manuais por um pacote instalador completo em Visual Basic.
     * **Interface HTA:** Implementada interface com auto-elevação de privilégios e opção de desinstalação simplificada.
 
 * **01/03/2026 - Versões 2.0 e 3.0 (Pivotagem de Estratégia):**
     * Migração de "Modo Dormir" para "Desligamento Direto" e adoção de Tarefas Agendadas via Shell para maior compatibilidade com o hardware do hospital.
+    * Criação da tarefa de desligamento, jogar este comando no Shell: schtasks /create /tn "ECONOMIA_ENERGIA" /tr "shutdown /s /f /t 0" /sc daily /st 21:00 /f /rl highest /ru "SYSTEM"
+    * Apagar a Tarefa: schtasks /delete /tn "ECONOMIA_ENERGIA" /f
 
 * **28/02/2026 22:00 - Versão 1.0 (Protótipo em .bat):**
     * Criação do primeiro script de suspensão testado em ambiente controlado (T.I.).
+    * Funcionou, mas não era viável porque demorava mais de 5 minutos para fazer o outro computador entrar em modo "sleep" via rede, imagina realizar a tarefa no hospital todo? Mas o resultado positivo foi animador e deu impulso e pensar em melhorias, os codigos foram perdidos.
+    
 
 ---
 
