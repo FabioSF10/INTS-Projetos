@@ -35,7 +35,7 @@ Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 <img width="215" height="333" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
 
 
-Como os arquivos foram todos mudados para a pasta "C:\INTS_Energy" Lá você encontrará o Executável caso seja preciso desinstalar ou atualizar o horario.
+Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encontrará o executável, caso vá desinstalar ou atualizar.
 
 ---
 
