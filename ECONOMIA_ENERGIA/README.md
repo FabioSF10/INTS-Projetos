@@ -17,32 +17,27 @@ O **INTS Energy Control** é uma solução profissional para otimizar o consumo 
 ## 📦 Como Instalar (Passo a Passo)
 
 ### 1. Download
-Baixe o pacote oficial clicando no link:
-👉 **[BAIXAR INTS_ENERGY_5.0.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/DESCOMPACTE_E_EXECUTE_INTS_ENERGY_5.0.zip)**
+Baixe o instalador no link:
+👉 **[BAIXAR INTS_ENERGY_5.0.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe
+)**
 
-### 2. Extração (Obrigatório)
-**IMPORTANTE:** Você deve extrair o conteúdo do ZIP para uma pasta antes de rodar. Não execute de dentro do arquivo compactado.
-> *Clique com o botão direito no arquivo > Extrair Tudo.*
+### 2. Execução 
+*Execute o programa e ele irá iniciar sozinho*
 > <img width="840" alt="image" src="https://github.com/user-attachments/assets/cc43fab4-f6d6-4b89-9d9c-dbb61f1a2bf9" />
 
-
-### 3. Instalação Automática
-Abra a pasta extraída e execute o arquivo:
-**`INSTALADOR_INTS_ENERGY.exe`** (Ícone do Hospital)
-<img width="341" height="182" alt="image" src="https://github.com/user-attachments/assets/0706b081-e4f2-4587-9f57-16819ee660ac" />
-
-
-* O Windows pedirá permissão de Administrador (UAC). Clique em **SIM**.
+* Se o Windows pedir permissão de Administrador. Clique em **SIM**.
 * Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
 * <img width="1477" height="688" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
 
-
-### 4. Configuração Final
+### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 1.  Defina o **Horário de Desligamento**.
 2.  Ajuste o **Tempo de Aviso** e **Adiamento**.
 3.  Clique em **INSTALAR/ATUALIZAR**.
 <img width="215" height="333" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
+
+
+Como os arquivos foram todos mudados para a pasta "C:\INTS_Energy" Lá você encontrará o Executável caso seja preciso desinstalar ou atualizar o horario.
 
 ---
 
