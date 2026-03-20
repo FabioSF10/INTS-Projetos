@@ -18,7 +18,7 @@ O **INTS Energy Control** é uma solução profissional para otimizar o consumo 
 
 ### 1. Download
 Baixe o instalador no link:
-👉 **[BAIXAR INTS_ENERGY_5.0.zip](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe
+👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe
 )**
 
 ### 2. Execução 
