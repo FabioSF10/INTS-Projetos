@@ -23,8 +23,6 @@ Baixe o instalador no link:
 
 ### 2. Execução 
 *Execute o programa e ele irá iniciar sozinho*
-> <img width="840" alt="image" src="https://github.com/user-attachments/assets/cc43fab4-f6d6-4b89-9d9c-dbb61f1a2bf9" />
-
 * Se o Windows pedir permissão de Administrador. Clique em **SIM**.
 * Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
 * <img width="1477" height="688" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
