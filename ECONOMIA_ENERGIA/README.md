@@ -6,16 +6,17 @@
 
 O **INTS Energy Control** é uma solução profissional para otimizar o consumo de energia no hospital. Ele automatiza o desligamento de desktops fora do horário operacional, preservando o hardware e reduzindo custos.
 <div align="center">
-## 🌟 O que há de novo na Versão 5.0?
-**Instalador Maestro:** Agora o processo é 100% automático e invisível.
-**Motor em Python:** Monitoramento mais robusto e leve.
-**Auto-Instalação no C:\:** O sistema organiza seus próprios arquivos para evitar deleções acidentais.
-**Manual em PDF Integrado:** Documentação técnica movida junto com o sistema.
-
+   
+## 🌟 O que há de novo na Versão 5.0?<br>
+**Instalador Maestro:** Agora o processo é 100% automático e invisível.<br>
+**Motor em Python:** Monitoramento mais robusto e leve.<br>
+**Auto-Instalação no C:\:** O sistema organiza seus próprios arquivos para evitar deleções acidentais.<br>
+**Manual em PDF Integrado:** Documentação técnica movida junto com o sistema.<br>
+<br>
 ---
-
+<br>
 ## 📦 Como Instalar (Passo a Passo)
-
+<br>
 ### 1. Download
 Baixe o instalador no link:
 👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe
