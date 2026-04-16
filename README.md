@@ -6,7 +6,7 @@ Este repositório centraliza as soluções, scripts e ferramentas desenvolvidas 
 
 ## 🚀 Portfólio de Soluções
 
-### ⚡ [ECONOMIA DE ENERGIA (v4.1)](./ECONOMIA_ENERGIA)
+### ⚡ [ECONOMIA DE ENERGIA (v5.0)](./ECONOMIA_ENERGIA)
 **Foco:** Redução de custos (FinOps) e sustentabilidade.
 * **Solução:** Automação de desligamento programado com interface visual (HTA).
 * **Tecnologias:** HTA/JavaScript, VBScript (Silent Mode), Advanced Batch, Python.
