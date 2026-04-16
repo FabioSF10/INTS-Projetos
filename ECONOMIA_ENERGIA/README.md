@@ -33,9 +33,9 @@ Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
 ### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 
-1️⃣ Defina o **Horário de Desligamento**.
-2️⃣ Ajuste o **Tempo de Aviso** e **Adiamento**.
-3️⃣ Clique em **INSTALAR/ATUALIZAR**.
+1️⃣ Defina o **Horário de Desligamento**.<br>
+2️⃣ Ajuste o **Tempo de Aviso** e **Adiamento**.<br>
+3️⃣ Clique em **INSTALAR/ATUALIZAR**.<br>
 
 <img width="415" alt="setup" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
 
