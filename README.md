@@ -6,23 +6,22 @@ Este repositório centraliza as soluções, scripts e ferramentas desenvolvidas 
 
 ## 🚀 Portfólio de Soluções
 
-### ⚡ [ECONOMIA DE ENERGIA (v4.0)](./ECONOMIA_ENERGIA)
+### ⚡ [ECONOMIA DE ENERGIA (v4.1)](./ECONOMIA_ENERGIA)
 **Foco:** Redução de custos (FinOps) e sustentabilidade.
 * **Solução:** Automação de desligamento programado com interface visual (HTA).
-* **Tecnologias:** HTA/JavaScript, VBScript (Silent Mode), Advanced Batch.
-* **Status:** 🚀 **Versão 4.0 estável (Instalador Automatizado).**
+* **Tecnologias:** HTA/JavaScript, VBScript (Silent Mode), Advanced Batch, Python.
+* **Status:** 🚀 **Versão 4.1 estável (Instalador Automatizado).**
 * **Diferencial:** Possui instalador inteligente que padroniza o diretório e garante execução silenciosa para não impactar o usuário.
 
 ### 🕒 [SINCRONIZAÇÃO DE HORÁRIO](./SINCRONIZACAO_HORARIO)
 **Foco:** Integridade de Logs e Segurança.
-* **Solução:** Script para garantir que todos os terminais estejam sincronizados com o servidor NTP oficial.
+* **Solução:** Script para garantir que todos os terminais estejam sincronizados com o servidor.
 * **Status:** 🛠️ Em desenvolvimento.
 
 ---
 
 ## 🛠️ Stack Tecnológica Aplicada
-* **Linguagens:** Batch Script, VBScript, HTML/JS (Interface).
-* **Protocolos & Ferramentas:** RPC, Sysinternals (PsTools), Schtasks.
+* **Linguagens:** Batch Script, VBScript, HTML/JS (Interface), Python.
 * **Metodologia:** Foco em baixo consumo de recursos e zero dependência de software de terceiros.
 
 ---
