@@ -22,8 +22,8 @@ Baixe o instalador no link:
 )**
 
 ### 2. Execução 
-*Execute o programa e ele irá iniciar sozinho*
-*Se o Windows pedir permissão de Administrador. Clique em **SIM**.*
+*Execute o programa e ele irá iniciar sozinho*<br>
+Se o Windows pedir permissão de Administrador. Clique em **SIM**.<br>
 Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
