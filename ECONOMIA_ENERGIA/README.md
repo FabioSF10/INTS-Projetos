@@ -44,6 +44,11 @@ Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encon
 * **Limpeza:** Você já pode apagar a pasta que baixou (Downloads/Desktop) para manter o computador limpo.
 * **Persistência:** O sistema cria tarefas agendadas no Windows que garantem o funcionamento após cada reinicialização.
 
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/03ddde23-099c-4a42-93ed-4d11a38fce87" />
+Esta é a página de aviso de desligamento que aparece para o médico caso ele esteja usando. Caso não, e o tempo se exceda, o computador é desligado. Uma solução simples de economia para uma grande corporação hospitalar.
+
+
 ---
 
 ## 🛠️ Detalhes Técnicos
