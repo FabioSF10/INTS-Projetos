@@ -25,15 +25,18 @@ Baixe o instalador no link:
 *Execute o programa e ele irá iniciar sozinho*
 * Se o Windows pedir permissão de Administrador. Clique em **SIM**.
 * Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
-* <img width="500" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
+<div align="center">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
+</div>
 
 ### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 1.  Defina o **Horário de Desligamento**.
 2.  Ajuste o **Tempo de Aviso** e **Adiamento**.
 3.  Clique em **INSTALAR/ATUALIZAR**.
+<div align="center">
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
-
+</div>
 
 Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encontrará o executável, caso vá desinstalar ou atualizar.
 
@@ -44,8 +47,9 @@ Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encon
 * **Limpeza:** Você já pode apagar a pasta que baixou (Downloads/Desktop) para manter o computador limpo.
 * **Persistência:** O sistema cria tarefas agendadas no Windows que garantem o funcionamento após cada reinicialização.
 
-
+<div align="center">
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/03ddde23-099c-4a42-93ed-4d11a38fce87" />
+</div>
 Esta é a página de aviso de desligamento que aparece para o médico caso ele esteja usando. Caso não, e o tempo se exceda, o computador é desligado. Uma solução simples de economia para uma grande corporação hospitalar.
 
 
