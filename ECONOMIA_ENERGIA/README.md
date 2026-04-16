@@ -5,7 +5,7 @@
 ![Licença](https://img.shields.io/badge/license-MIT-important)
 
 O **INTS Energy Control** é uma solução profissional para otimizar o consumo de energia no hospital. Ele automatiza o desligamento de desktops fora do horário operacional, preservando o hardware e reduzindo custos.
-
+<div align="center">
 ## 🌟 O que há de novo na Versão 5.0?
 * **Instalador Maestro:** Agora o processo é 100% automático e invisível.
 * **Motor em Python:** Monitoramento mais robusto e leve.
@@ -25,16 +25,16 @@ Baixe o instalador no link:
 *Execute o programa e ele irá iniciar sozinho*
 * Se o Windows pedir permissão de Administrador. Clique em **SIM**.
 * Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
-<div align="center">
+
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
-</div>
+
 
 ### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 1.  Defina o **Horário de Desligamento**.
 2.  Ajuste o **Tempo de Aviso** e **Adiamento**.
 3.  Clique em **INSTALAR/ATUALIZAR**.
-<div align="center">
+
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
 </div>
 
