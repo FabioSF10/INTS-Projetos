@@ -6,37 +6,39 @@
 
 O **INTS Energy Control** é uma solução profissional para otimizar o consumo de energia no hospital. Ele automatiza o desligamento de desktops fora do horário operacional, preservando o hardware e reduzindo custos.
 <div align="center">
-   
-## 🌟 O que há de novo na Versão 5.0?<br>
-**Instalador Maestro:** Agora o processo é 100% automático e invisível.<br>
-**Motor em Python:** Monitoramento mais robusto e leve.<br>
-**Auto-Instalação no C:\:** O sistema organiza seus próprios arquivos para evitar deleções acidentais.<br>
-**Manual em PDF Integrado:** Documentação técnica movida junto com o sistema.<br>
-<br>
+
+## 🌟 O que há de novo na Versão 5.0?
+
+**Instalador Maestro:** Agora o processo é 100% automático e invisível.
+**Motor em Python:** Monitoramento mais robusto e leve.
+**Auto-Instalação no C:\\:** O sistema organiza seus próprios arquivos para evitar deleções acidentais.
+**Manual em PDF Integrado:** Documentação técnica movida junto com o sistema.
+
 ---
-<br>
+
 ## 📦 Como Instalar (Passo a Passo)
-<br>
+
 ### 1. Download
 Baixe o instalador no link:
-👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe
-)**
+👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe)**
 
 ### 2. Execução 
-*Execute o programa e ele irá iniciar sozinho*<br>
-Se o Windows pedir permissão de Administrador. Clique em **SIM**.<br>
+*Execute o programa e ele irá iniciar sozinho*
+
+Se o Windows pedir permissão de Administrador, clique em **SIM**.
 Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
-
+<img width="500" alt="confirmação" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
 
 ### 3. Configuração Final
-Após o "OK", a tela de configuração (Setup) abrirá automaticamente:<br>
-1.Defina o **Horário de Desligamento**.<br>
-2.Ajuste o **Tempo de Aviso** e **Adiamento**.<br>
-3.Clique em **INSTALAR/ATUALIZAR**.<br>
+Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 
-<img width="415" alt="image" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
+1. Defina o **Horário de Desligamento**.
+2. Ajuste o **Tempo de Aviso** e **Adiamento**.
+3. Clique em **INSTALAR/ATUALIZAR**.
+
+<img width="415" alt="setup" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
+
 </div>
 
 Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encontrará o executável, caso vá desinstalar ou atualizar.
