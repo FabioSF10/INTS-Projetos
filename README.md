@@ -10,7 +10,7 @@ Este repositório centraliza as soluções, scripts e ferramentas desenvolvidas 
 **Foco:** Redução de custos (FinOps) e sustentabilidade.
 * **Solução:** Automação de desligamento programado com interface visual (HTA).
 * **Tecnologias:** HTA/JavaScript, VBScript (Silent Mode), Advanced Batch, Python.
-* **Status:** 🚀 **Versão 4.1 estável (Instalador Automatizado).**
+* **Status:** 🚀 **Versão 5.0 estável (Instalador Automatizado).**
 * **Diferencial:** Possui instalador inteligente que padroniza o diretório e garante execução silenciosa para não impactar o usuário.
 
 ### 🕒 [SINCRONIZAÇÃO DE HORÁRIO](./SINCRONIZACAO_HORARIO)
