@@ -28,10 +28,9 @@ Baixe o instalador no link:
 ### 2. Execução e Privilégios
 
 No computador de destino, execute o instalador diretamente a partir do diretório do servidor.
-
 Credenciais: Como o programa requer privilégios elevados, insira suas credenciais de Administrador de TI quando solicitado pelo Windows (UAC).
-
 Instalação: Após a autenticação, o processo iniciará automaticamente. Aguarde a mensagem de confirmação: "SISTEMA INSTALADO COM SUCESSO".
+-
 
 ### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
