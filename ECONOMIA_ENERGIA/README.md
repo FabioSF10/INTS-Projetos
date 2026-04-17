@@ -87,8 +87,7 @@ A solução utiliza uma estrutura híbrida para máxima eficiência:
 * **19/03/2026 05:00 - Versão 5.0 (O Maestro & Motor Python) 🚀:**
     * **Arquitetura Híbrida:** Migração do motor de monitoramento para **Python**, garantindo maior estabilidade, leveza e precisão no processamento de horários.
     * **Instalador Maestro (EXE):** O novo instalador em `.exe` agora gerencia toda a logística. Ele identifica o local de execução, move os arquivos para o `C:\INTS_Energy` e abre o setup automaticamente.
-    * **Inteligência de Localização:** O script agora detecta se já está na pasta de destino. Se estiver, ele pula a instalação e abre o configurador direto, evitando mensagens redundantes.
-    * **Documentação Embarcada:** Integração automática do **Manual Técnico em PDF** durante o processo de cópia.
+    * **Inteligência de Localização:** O script agora detecta se já está na pasta de destino. Se estiver, ele pula a instalação e abre o configurador direto, evitando mensagens redundantes.   
     * **Invisibilidade Total:** Refinamento dos scripts VBS para garantir que o usuário final nunca veja janelas de prompt de comando (CMD).
 
 * **06/03/2026 21:00 - Versão 4.1 (Parâmetros Dinâmicos & Segurança):**
