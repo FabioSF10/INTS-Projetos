@@ -22,8 +22,10 @@ O **INTS Energy Control** é uma solução profissional para otimizar o consumo 
 Baixe o instalador no link:
 👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe)**
 
+ATENÇÃO, RECOMENDO FORTEMENTE QUE BAIXE E DEIXE O INSTALADOR EM ALGUMA PASTA DO SERVIDOR QUE VOCÊ POSSA ACESSAR DE QUALQUER MÁQUINA, NO CASO DO LOCAL EM QUE EU TRABALHO EXISTE UMA PASTA DE PROGRAMAS UTEIS, E LÁ CONTEM O INTS ENERGY, FAÇA O MESMO E DEIXE NO SERVIDOR DO SEU HOSPITAL EM UMA PASTA DE FACIL ACESSO
+
 ### 2. Execução 
-*Execute o programa e ele irá iniciar sozinho*
+*No computador que precisa instalar, execute o programa acessando onde você o salvou do servidor e ele irá iniciar sozinho apos pedir seu login e senha*
 
 Se o Windows pedir permissão de Administrador, clique em **SIM**.
 Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
