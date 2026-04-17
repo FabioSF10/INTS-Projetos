@@ -77,7 +77,6 @@ A solução utiliza uma estrutura híbrida para máxima eficiência:
 ---
 
 ## 💡 Suporte e Manutenção
-* **Manual:** Um guia detalhado em PDF é copiado para `C:\INTS_Energy\Manual_Tecnico.pdf`.
 * **Logs:** Verifique `install_log.txt` na pasta de destino para auditoria.
 * **Desinstalação:** Utilize o botão de remoção dentro da interface de Setup.
 
