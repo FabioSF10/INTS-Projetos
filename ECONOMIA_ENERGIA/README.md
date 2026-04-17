@@ -15,7 +15,6 @@ O **INTS Energy Control** é uma solução profissional para otimizar o consumo 
 | **Instalador Maestro** | Processo 100% automático e invisível. |
 | **Motor em Python** | Monitoramento mais robusto e leve. |
 | **Auto-Instalação** | Sistema organiza arquivos no `C:\` para evitar deleções. |
-| **Manual Integrado** | Documentação técnica em PDF movida junto com o sistema. |
 
 </div>
 
