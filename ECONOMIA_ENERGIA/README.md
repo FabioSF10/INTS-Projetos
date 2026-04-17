@@ -15,7 +15,7 @@ Implementado em uma unidade de **9 andares**, o sistema gerencia o ciclo de ener
 * **Preservação de Hardware:** O processo é executado de forma segura, garantindo o fechamento correto do sistema e preservando a vida útil dos componentes.
 
 ### 💡 Impacto e Resultados
-Este projeto é uma ferramenta de **sustentabilidade e economia operacional (OpEx)**. Ele permite que a equipe de TI tenha controle sobre o parque tecnológico, reduzindo custos fixos com energia elétrica e a pegada de carbono da instituição de forma automatizada e escalável.
+Este projeto é uma ferramenta de **sustentabilidade e economia operacional (OpEx)**. Ele permite que a equipe de TI tenha controle sobre o parque tecnológico, reduzindo custos fixos com energia elétrica da instituição de forma automatizada e escalável.
 
 
 <div align="center">
