@@ -5,43 +5,52 @@
 ![Licença](https://img.shields.io/badge/license-MIT-important)
 
 O **INTS Energy Control** é uma solução profissional para otimizar o consumo de energia no hospital. Ele automatiza o desligamento de desktops fora do horário operacional, preservando o hardware e reduzindo custos.
+
 <div align="center">
 
 ## 🌟 O que há de novo na Versão 5.0?
 
-**Instalador Maestro:** Agora o processo é 100% automático e invisível.
-**Motor em Python:** Monitoramento mais robusto e leve.
-**Auto-Instalação no C:\\:** O sistema organiza seus próprios arquivos para evitar deleções acidentais.
-**Manual em PDF Integrado:** Documentação técnica movida junto com o sistema.
+| Recurso | Descrição |
+| :--- | :--- |
+| **Instalador Maestro** | Processo 100% automático e invisível. |
+| **Motor em Python** | Monitoramento mais robusto e leve. |
+| **Auto-Instalação** | Sistema organiza arquivos no `C:\` para evitar deleções. |
+| **Manual Integrado** | Documentação técnica em PDF movida junto com o sistema. |
+
+</div>
 
 ---
 
 ## 📦 Como Instalar (Passo a Passo)
 
 ### 1. Download
-Baixe o instalador no link:
+Baixe o instalador no link abaixo:
 👉 **[BAIXAR Instalador_INTS_ENERGY.exe](https://github.com/FabioSF10/INTS-Projetos/raw/refs/heads/main/ECONOMIA_ENERGIA/Instalador_INTS_ENERGY.exe)**
 
 > [!TIP]
-> **Dica de Implementação:** Para otimizar o suporte, hospede o instalador em um diretório de rede compartilhado (ex: `\\Servidor\Programas_Uteis`). Isso permite o acesso rápido e a instalação em qualquer estação de trabalho sem a necessidade de novos downloads.
+> **Dica de Implementação:** Para otimizar o suporte, hospede o instalador em um diretório de rede compartilhado (ex: `\\Servidor\Programas_Uteis`). Isso permite o acesso rápido e a instalação em qualquer estação sem a necessidade de novos downloads.
 
 ### 2. Execução e Privilégios
 
-No computador de destino, execute o instalador diretamente a partir do diretório do servidor.
-Credenciais: Como o programa requer privilégios elevados, insira suas credenciais de Administrador de TI quando solicitado pelo Windows (UAC).
-Instalação: Após a autenticação, o processo iniciará automaticamente. Aguarde a mensagem de confirmação: "SISTEMA INSTALADO COM SUCESSO".
--
+No computador de destino, execute o instalador diretamente a partir do diretório do servidor:
+
+1. **Credenciais:** Como o programa requer privilégios elevados, insira suas credenciais de **Administrador de TI** quando solicitado pelo Windows (UAC).
+2. **Instalação:** Após a autenticação, o processo iniciará automaticamente. 
+3. **Confirmação:** Aguarde a mensagem: `"SISTEMA INSTALADO COM SUCESSO"`.
 
 ### 3. Configuração Final
+
+<div align="center">
+
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
 
-1️⃣ Defina o **Horário de Desligamento**.<br>
-2️⃣ Ajuste o **Tempo de Aviso** e **Adiamento**.<br>
-3️⃣ Clique em **INSTALAR/ATUALIZAR**.<br>
+**1️⃣ Defina o Horário | 2️⃣ Ajuste o Aviso | 3️⃣ Clique em Instalar**
 
 <img width="415" alt="setup" src="https://github.com/user-attachments/assets/4ea9d4e8-db37-4998-8f3a-2c179df67490" />
 
 </div>
+
+---
 
 Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encontrará o executável, caso vá desinstalar ou atualizar.
 
