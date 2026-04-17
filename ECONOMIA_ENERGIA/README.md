@@ -25,13 +25,13 @@ Baixe o instalador no link:
 > [!TIP]
 > **Dica de Implementação:** Para otimizar o suporte, hospede o instalador em um diretório de rede compartilhado (ex: `\\Servidor\Programas_Uteis`). Isso permite o acesso rápido e a instalação em qualquer estação de trabalho sem a necessidade de novos downloads.
 
-### 2. Execução 
-*No computador que precisa instalar, execute o programa acessando onde você o salvou do servidor e ele irá iniciar sozinho apos pedir seu login e senha*
+### 2. Execução e Privilégios
 
-Se o Windows pedir permissão de Administrador, clique em **SIM**.
-Aguarde a mensagem de confirmação: *"SISTEMA INSTALADO COM SUCESSO"*.
+No computador de destino, execute o instalador diretamente a partir do diretório do servidor.
 
-<img width="500" alt="confirmação" src="https://github.com/user-attachments/assets/15b4744e-a29a-4b15-b207-3e4dcd6b17a8" />
+Credenciais: Como o programa requer privilégios elevados, insira suas credenciais de Administrador de TI quando solicitado pelo Windows (UAC).
+
+Instalação: Após a autenticação, o processo iniciará automaticamente. Aguarde a mensagem de confirmação: "SISTEMA INSTALADO COM SUCESSO".
 
 ### 3. Configuração Final
 Após o "OK", a tela de configuração (Setup) abrirá automaticamente:
