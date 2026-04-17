@@ -69,7 +69,6 @@ Como os arquivos foram movidos à pasta "C:\INTS_Energy", então lá você encon
 
 ## 📂 O que acontece após a instalação?
 * **Pasta Segura:** Todos os arquivos são movidos para `C:\INTS_Energy`.
-* **Limpeza:** Você já pode apagar a pasta que baixou (Downloads/Desktop) para manter o computador limpo.
 * **Persistência:** O sistema cria tarefas agendadas no Windows que garantem o funcionamento após cada reinicialização.
 
 <div align="center">
