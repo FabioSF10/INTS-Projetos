@@ -4,7 +4,19 @@
 ![Autor](https://img.shields.io/badge/autor-Fabio%20Stefano-blue)
 ![Licença](https://img.shields.io/badge/license-MIT-important)
 
-O **INTS Energy Control** é uma solução profissional para otimizar o consumo de energia no hospital. Ele automatiza o desligamento de desktops fora do horário operacional, preservando o hardware e reduzindo custos.
+
+O **INTS Energy** é uma solução de alta eficiência desenvolvida para a gestão e otimização do consumo energético em infraestruturas hospitalares. O projeto nasceu de uma iniciativa própria para resolver um desafio comum em grandes unidades: o desperdício gerado por estações de trabalho que permaneciam ligadas fora do horário operacional.
+
+### 📋 O Cenário e a Solução
+Implementado em uma unidade de **9 andares**, o sistema gerencia o ciclo de energia de centenas de desktops. A solução foi desenhada para ser inteligente e adaptável à criticidade de cada setor:
+
+* **Setores Administrativos:** Desligamento automatizado às **20h**.
+* **Setores Estratégicos:** Cronograma estendido com desligamento às **00h**, garantindo a conformidade com a rotina da unidade.
+* **Preservação de Hardware:** O processo é executado de forma segura, garantindo o fechamento correto do sistema e preservando a vida útil dos componentes.
+
+### 💡 Impacto e Resultados
+Este projeto é uma ferramenta de **sustentabilidade e economia operacional (OpEx)**. Ele permite que a equipe de TI tenha controle sobre o parque tecnológico, reduzindo custos fixos com energia elétrica e a pegada de carbono da instituição de forma automatizada e escalável.
+
 
 <div align="center">
 
