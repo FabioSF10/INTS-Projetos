@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INTS Energy Control - v5.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="iso-8859-1">
+    <hta:application id="oApp" border="thin" caption="yes" scroll="no" singleinstance="yes" windowstate="normal" contextmenu="no" icon="Icone.ico">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #2D5A27; color: white; padding: 20px; margin: 0; }
+        .card { background: white; padding: 25px; border-radius: 12px; color: #333; box-shadow: 0 8px 25px rgba(0,0,0,0.4); }
+        h2 { color: #2D5A27; margin: 0 0 20px 0; font-size: 22px; border-bottom: 3px solid #ADFF2F; padding-bottom: 10px; text-align: center; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; font-size: 14px; color: #444; }
+        input { width: 100%; padding: 12px; box-sizing: border-box; border: 2px solid #ddd; border-radius: 6px; font-size: 18px; font-weight: bold; text-align: center; color: #2D5A27; }
+        input:focus { border-color: #ADFF2F; outline: none; background: #f0fff0; }
+        .btn-save { width: 100%; padding: 15px; background: #2D5A27; color: white; border: none; border-radius: 6px; margin-top: 25px; cursor: pointer; font-weight: bold; font-size: 16px; text-transform: uppercase; }
+        .btn-save:hover { background: #1e3d1a; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .btn-del { width: 100%; padding: 10px; background: #f44336; color: white; border: none; border-radius: 6px; margin-top: 12px; cursor: pointer; font-size: 13px; font-weight: bold; }
+        .btn-del:hover { background: #d32f2f; }
+        .footer { font-size: 11px; text-align: center; margin-top: 25px; color: #555; border-top: 2px solid #eee; padding-top: 15px; line-height: 1.6; }
+        .dev-info { font-size: 13px; color: #2D5A27; font-weight: bold; display: block; margin-top: 5px; }
+    </style>
+</head>
+<script language="javascript">
+    var shell = new ActiveXObject("WScript.Shell");
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var pastaDestino = "C:\\INTS_Energy";
+
+    // Força o foco na janela para garantir que ela não abra atrás de outras
+    window.focus();
+
+    function registrarLog(msg) {
+        try {
+            if (!fso.FolderExists(pastaDestino)) fso.CreateFolder(pastaDestino);
+            var logF = fso.OpenTextFile(pastaDestino + "\\log_sistema.txt", 8, true);
+            logF.WriteLine("[" + new Date().toLocaleString() + "] " + msg);
+            logF.Close();
+        } catch(e) {}
+    }
+
+    function mascaraHora(i) {
+        var v = i.value.replace(/\D/g, "");
+        if (v.length > 4) v = v.substring(0, 4);
+        if (v.length > 2) v = v.substring(0, 2) + ":" + v.substring(2);
+        i.value = v;
+    }
+
+function configurar() {
+        try {
+            // 1. Coleta e Validação de Dados (Mantido original)
+            var h = document.getElementById("txtHora").value;
+            var a = parseInt(document.getElementById("txtAviso").value);
+            var d = parseInt(document.getElementById("txtAdiar").value);
+
+            if (h.length < 5) { alert("ERRO: Informe o horário corretamente (HH:mm)!"); return; }
+            if (isNaN(a) || isNaN(d)) { alert("ERRO: Os tempos de aviso e adiamento devem ser números!"); return; }
+
+            var folgaMinima = 5;
+            if (d < (a + folgaMinima)) {
+                alert("OPERAÇÃO BLOQUEADA!\n\nO Adiamento deve ser maior que o Aviso.");
+                return; 
+            }
+
+            // 2. Preparação do Ambiente
+            if (!fso.FolderExists(pastaDestino)) fso.CreateFolder(pastaDestino);
+            registrarLog("HTA_SETUP: Iniciando instalacao...");
+            
+            // Finaliza processo antigo se estiver rodando
+            try { shell.Run("taskkill /F /IM ints_energy.exe", 0, true); } catch(e) {}
+
+            // 3. Criação do arquivo de configuração
+            var file = fso.CreateTextFile(pastaDestino + "\\config.txt", true);
+            file.WriteLine(h);
+            file.WriteLine(a);
+            file.WriteLine(d);
+            file.WriteLine(h);
+            file.Close();
+
+            // 4. Lógica de Caminho Robusta (Correção para a tela branca)
+            var pathAtual = window.location.pathname.replace(/\\/g, "\\");
+            if (pathAtual.charAt(0) == "/" || pathAtual.charAt(0) == "\\") {
+                pathAtual = pathAtual.substring(1);
+            }
+            var pastaAtual = pathAtual.substring(0, pathAtual.lastIndexOf("\\"));
+            
+            var exeSource = pastaAtual + "\\ints_energy.exe";
+            if (fso.FileExists(exeSource)) {
+                fso.CopyFile(exeSource, pastaDestino + "\\ints_energy.exe", true);
+            }
+
+            // 5. Limpeza e Agendamento de Tarefas
+            var startupPath = shell.SpecialFolders("Startup") + "\\INTS_Energy.lnk";
+            if (fso.FileExists(startupPath)) { fso.DeleteFile(startupPath); }
+
+            // Tarefa do Monitor
+            try { shell.Run('schtasks /delete /tn "INTS_Monitor" /f', 0, true); } catch(e) {}
+            shell.Run('schtasks /create /tn "INTS_Monitor" /tr "' + pastaDestino + '\\ints_energy.exe" /sc onlogon /rl highest /f', 0, true);
+
+            // Tarefa de Desligamento
+            try { shell.Run('schtasks /delete /tn "INTS_Seguranca" /f', 0, true); } catch(e) {}
+            var cmdSeg = 'schtasks /create /tn "INTS_Seguranca" /tr "shutdown /s /f /t 0" /sc daily /st ' + h + ' /f /rl highest /ru "System"';
+            var retorno = shell.Run(cmdSeg, 0, true); 
+
+            // 6. Finalização e Avisos
+            if (retorno !== 0) {
+                alert("AVISO: Erro ao criar tarefa Windows (" + retorno + "). Verifique os privilégios de Administrador.");
+            } else {
+                var msgFinal = "SISTEMA INSTALADO COM SUCESSO!\n\n";
+                msgFinal += "1. Arquivos salvos em: C:\\INTS_Energy\n";
+                msgFinal += "2. Tarefas de Agendamento configuradas.\n";
+                msgFinal += "3. O monitoramento já foi iniciado.\n\n";
+                msgFinal += "O técnico pode fechar esta janela agora.";
+                alert(msgFinal);
+                
+                // Inicia o monitor somente após o OK do usuário
+                shell.Run('schtasks /run /tn "INTS_Monitor"', 0, false);
+            }
+
+            window.close();
+
+        } catch(e) { 
+            alert("Erro fatal: " + e.description); 
+        }
+    }
+
+    function desinstalar() {
+        try {
+            try { shell.Run("taskkill /F /IM ints_energy.exe", 0, true); } catch(e) {}
+            try { shell.Run('schtasks /delete /tn "INTS_Seguranca" /f', 0, true); } catch(e) {}
+            try { shell.Run('schtasks /delete /tn "INTS_Monitor" /f', 0, true); } catch(e) {}
+
+            var startupPath = shell.SpecialFolders("Startup") + "\\INTS_Energy.lnk";
+            if (fso.FileExists(startupPath)) { fso.DeleteFile(startupPath); }
+
+            registrarLog("HTA_UNINSTALL: Removido completamente.");
+            alert("Sistema removido com sucesso!");
+            window.close();
+        } catch(e) { window.close(); }
+    }
+
+    window.resizeTo(450, 680);
+</script>
+<body>
+    <div class="card">
+        <h2>Setup INTS Energy Control</h2>
+        <label>Horário de Desligamento (HH:mm):</label>
+        <input type="text" id="txtHora" maxlength="5" onkeyup="mascaraHora(this)" placeholder="19:00">
+        <label>Aviso Prévio (Minutos):</label>
+        <input type="text" id="txtAviso" maxlength="3" value="10">
+        <label>Tempo de Adiamento (Minutos):</label>
+        <input type="text" id="txtAdiar" maxlength="3" value="15">
+        <button class="btn-save" onclick="configurar()">Instalar / Atualizar</button>
+        <button class="btn-del" onclick="desinstalar()">Desinstalar Sistema</button>
+        <div class="footer">
+            Hospital INTS Santo Amaro<br>
+            <span class="dev-info">Analista: Fabio Stefano de Figueiredo</span>
+        </div>
+    </div>
+</body>
+</html>
